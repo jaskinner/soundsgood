@@ -18,10 +18,10 @@ $theme-colors: map-merge((
 ), $theme-colors);
 
 
-$body-color:                        color("rolling-stone");
+$body-color:                        color("alabaster");
 $border-color:                      color("athens-gray");
 $border-radius:                     rem(3px);
-$text-muted:                        #a3a6a8;
+$text-muted:                        color("wild-sand");
 
 
 
@@ -232,7 +232,8 @@ $widget-margin-y:                   60px;
 $footer-padding-y:                  90px;
 $footer-background:                 theme-color("black");
 $footer-headings-color:             color("white");
-$footer-link-color:                 #cecece;
+//$footer-link-color:                 #cecece;
+$footer-link-color:                 color("white");
 
 
 // Offcanvas

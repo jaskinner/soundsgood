@@ -87,7 +87,7 @@ body {
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.8;
-    color: #788487;
+    color: #f8f8f8;
     text-align: left;
     background-color: #fff;
 }
@@ -2388,7 +2388,7 @@ textarea.form-control {
 }
 
 .form-check-input:disabled ~ .form-check-label {
-    color: #a3a6a8;
+    color: #f4f4f4;
 }
 
 .form-check-label {
@@ -2781,7 +2781,7 @@ textarea.form-control.is-invalid {
 .btn {
     display: inline-block;
     font-weight: 600;
-    color: #788487;
+    color: #f8f8f8;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
@@ -2807,7 +2807,7 @@ textarea.form-control.is-invalid {
 }
 
 .btn:hover {
-    color: #788487;
+    color: #f8f8f8;
     text-decoration: none;
 }
 
@@ -3764,7 +3764,7 @@ input[type="button"].btn-block {
     padding: .5rem 0;
     margin: .125rem 0 0;
     font-size: .875rem;
-    color: #788487;
+    color: #f8f8f8;
     text-align: left;
     list-style: none;
     background-color: #fff;
@@ -5631,7 +5631,7 @@ input[type="button"].btn-block {
 .breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
     padding-right: .5rem;
-    color: #788487;
+    color: #f8f8f8;
     content: "/";
 }
 
@@ -5661,7 +5661,7 @@ input[type="button"].btn-block {
     padding: .5rem .875rem;
     margin-left: 0;
     line-height: 1.25;
-    color: #788487;
+    color: #f8f8f8;
     background-color: #fff;
     border: 0 solid #dee2e6;
 }
@@ -11395,11 +11395,11 @@ a.text-dark:focus {
 }
 
 .text-body {
-    color: #788487 !important;
+    color: #f8f8f8 !important;
 }
 
 .text-muted {
-    color: #a3a6a8 !important;
+    color: #f4f4f4 !important;
 }
 
 .text-black-50 {
@@ -11942,7 +11942,7 @@ pre[class*=language-] {
 }
 
 .info-list a {
-    color: #788487;
+    color: #f8f8f8;
 }
 
 .info-list a:hover,
@@ -12271,7 +12271,7 @@ img.img-shadow,
     box-shadow: 0 0 0 5px rgba(0, 0, 0, .05);
     transition: .5s all ease;
     transform: translateY(4.25rem);
-    color: #788487;
+    color: #f8f8f8;
 }
 
 .scroll-top.scroll-top-visible {
@@ -12721,7 +12721,7 @@ img.img-shadow,
     border-bottom: 1px solid #f0f0f0;
     padding-top: 100px;
     padding-bottom: 40px;
-    color: #788487;
+    color: #f8f8f8;
 }
 
 .review-card-content::before {
@@ -13005,7 +13005,7 @@ img.img-shadow,
 }
 
 .pricing-wrapper .pricing-body {
-    color: #788487;
+    color: #f8f8f8;
 }
 
 .pie-chart {
@@ -13859,7 +13859,7 @@ img.img-shadow,
 }
 
 .module-page-title .breadcrumb .breadcrumb-item > a {
-    color: #788487;
+    color: #f8f8f8;
 }
 
 .module-page-title .breadcrumb .breadcrumb-item > a:hover {
@@ -14081,7 +14081,7 @@ img.img-shadow,
 
 .filters a {
     opacity: .6;
-    color: #788487;
+    color: #f8f8f8;
 }
 
 .filters a:hover,
@@ -14340,7 +14340,7 @@ img.img-shadow,
 .post-meta {
     list-style: none;
     font-size: .8125rem;
-    color: #a3a6a8;
+    color: #f4f4f4;
     padding: 0;
     margin: 0;
 }
@@ -14353,7 +14353,7 @@ img.img-shadow,
 }
 
 .post-meta > li > a {
-    color: #a3a6a8;
+    color: #f4f4f4;
 }
 
 .post-meta > li > a:hover {
@@ -14625,7 +14625,7 @@ img.img-shadow,
 
 .comment-meta-date a,
 .comment-meta-date-shop a {
-    color: #788487;
+    color: #f8f8f8;
     opacity: .6;
 }
 
@@ -14688,7 +14688,7 @@ img.img-shadow,
 }
 
 .widget a {
-    color: #788487;
+    color: #f8f8f8;
 }
 
 .widget a:hover,
@@ -14791,7 +14791,7 @@ img.img-shadow,
 
 .post-date {
     font-size: .6875rem;
-    color: #a3a6a8;
+    color: #f4f4f4;
     display: block;
     margin: 0;
 }
@@ -14886,14 +14886,14 @@ img.img-shadow,
 
 .footer a,
 .footer .social-icons > li > a {
-    color: #cecece;
+    color: #fff;
 }
 
 .footer a:hover,
 .footer a:focus,
 .footer .social-icons > li > a:hover,
 .footer .social-icons > li > a:focus {
-    color: #f4f4f4;
+    color: white;
 }
 
 .footer .widget-categories ul li,
@@ -14999,14 +14999,14 @@ body.off-canvas-sidebar-open:after {
 
 .off-canvas-sidebar a,
 .off-canvas-sidebar .social-icons > li > a {
-    color: #cecece;
+    color: #fff;
 }
 
 .off-canvas-sidebar a:hover,
 .off-canvas-sidebar a:focus,
 .off-canvas-sidebar .social-icons > li > a:hover,
 .off-canvas-sidebar .social-icons > li > a:focus {
-    color: #f4f4f4;
+    color: white;
 }
 
 .off-canvas-sidebar .widget-categories ul li,

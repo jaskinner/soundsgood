@@ -11,8 +11,8 @@ $colors: map-merge((
 ), $colors);
 
 $theme-colors: map-merge((
-    "black":     #D663E3,
-    "brand":     #1475ff,
+    "black":     #1475ff,
+    "brand":     #D663E3,
     "new-gray":  #d8d8d8,
     "new-white": #ffffff,
 ), $theme-colors);
@@ -40,8 +40,9 @@ $link-hover-decoration:             none;
 
 $font-size-base:                    rem(14px);
 $line-height-base:                  1.8;
-$font-family-base:                  "Permanent Marker", cursive;
+$headings-font-family:              "Permanent Marker", cursive;
 $font-family-serif:                 "Playfair Display", sans-serif;
+$font-family-base:                  $font-family-serif;
 
 $h1-font-size:                      rem(42px);
 $h2-font-size:                      rem(32px);

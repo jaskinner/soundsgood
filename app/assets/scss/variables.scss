@@ -11,17 +11,17 @@ $colors: map-merge((
 ), $colors);
 
 $theme-colors: map-merge((
-    "black":     #1475ff,
-    "brand":     #D663E3,
+    "black":     #222222,
+    "brand":     #505cfd,
     "new-gray":  #d8d8d8,
     "new-white": #ffffff,
 ), $theme-colors);
 
 
-$body-color:                        color("alabaster");
+$body-color:                        color("rolling-stone");
 $border-color:                      color("athens-gray");
 $border-radius:                     rem(3px);
-$text-muted:                        color("wild-sand");
+$text-muted:                        #a3a6a8;
 
 
 
@@ -232,8 +232,7 @@ $widget-margin-y:                   60px;
 $footer-padding-y:                  90px;
 $footer-background:                 theme-color("black");
 $footer-headings-color:             color("white");
-//$footer-link-color:                 #cecece;
-$footer-link-color:                 color("white");
+$footer-link-color:                 #cecece;
 
 
 // Offcanvas

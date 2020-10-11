@@ -1,6 +1,10 @@
 //
 // Variables
 //
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(../fonts/PermanentMarker-Regular.ttf);
+}
 
 $colors: map-merge((
     "alabaster":     #f8f8f8,
@@ -269,7 +273,7 @@ $tooltip-margin:                    4px;
 
 // Preloader
 
-$preloader-size:                    30px;
+$preloader-size:                    50vh;
 $preloader-color:                   theme-color("brand");
 $preloader-background:              $body-bg;
 

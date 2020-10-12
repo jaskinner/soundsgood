@@ -74,14 +74,54 @@ append content
                     p.text-center: a(href="#" class="btn btn-circle btn-outline-brand") About Us
     // Who end
 
-    //= "\n"
+    = "\n"
+
+    // Form
+    section.module.divider-top#contact
+        .container
+
+            .row
+                .col-lg-6.col-md-9.m-auto.text-center
+                    h1 Let's talk.
+                    p.lead See how your users experience your website in realtime or view trends to see any changes in performance over time.
+
+            .row
+                .col-md-12
+                    .space(data-MY="60px")
+
+            .row
+                .col-md-8.m-auto
+                    form#contact-form(method="post" novalidate)
+                        .row
+                            .col-md-6
+                                .form-group
+                                    input.form-control(type="text" name="name" placeholder="Name" required="")
+                                    p.help-block.text-danger
+                            .col-md-6
+                                .form-group
+                                    input.form-control(type="email" name="email" placeholder="E-mail" required="")
+                                    p.help-block.text-danger
+                            .col-md-12
+                                .form-group
+                                    input.form-control(type="text" name="subject" placeholder="Subject" required="")
+                                    p.help-block.text-danger
+                            .col-md-12
+                                .form-group
+                                    textarea.form-control(name="message" placeholder="Message" rows="12" required="")
+                            .col-md-12
+                                p
+                                    input(type="submit" class="btn btn-block btn-brand" value="Send Message")
+                    // Ajax response
+                    #contact-response.ajax-response.text-center
+    // Form end
+
+    = "\n"
 
     // Image
-    //section.module.parallax(data-background="assets/images/lake.jpg" data-overlay="0.5")
-    //    .container-fluid
-    //
-    //        .row
-    //            .col-md-6.m-auto.text-center
-    //                h3 Thanks for checking out Sounds Good
-    //                p.lead See you at the premiere!
+    section.module.no-gutters.p-0
+        .container-fluid
+
+            .row
+                .col-md-12
+                    img(src="assets/images/main/lake.jpg" alt="")
     // Image end

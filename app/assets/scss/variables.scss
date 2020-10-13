@@ -29,7 +29,7 @@ $theme-colors: map-merge((
 
 $body-color:                        color("alabaster");
 $body-bg:                           color("mine-shaft");
-$border-color:                      color("rolling-stone");
+$border-color:                      theme-color("black");
 $border-radius:                     rem(3px);
 $text-muted:                        #a3a6a8;
 
@@ -210,10 +210,10 @@ $header-transparent-link-clr-hvr:   rgba($header-transparent-link-clr, .7);
 // Header Small
 
 $header-small-height:               60px;
-$header-small-background:           color("white");
+$header-small-background:           color("mine-shaft");
 $header-small-screen-background:    theme-color("black");
 $header-small-border-color:         rgba($border-color, .8);
-$header-small-link-clr:             theme-color("black");
+$header-small-link-clr:             color("white");
 $header-small-link-clr-hvr:         rgba($header-small-link-clr, .65);
 
 

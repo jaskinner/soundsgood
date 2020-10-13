@@ -13,10 +13,10 @@ append content
     section.module-cover.parallax.text-center.fullscreen(data-background="assets/images/module-2.jpg" data-jarallax-video="mp4:assets/video/hero.mp4" data-overlay="0.6")
         .container
 
-            .row
+            .row#home
                 .col-md-12
-                    h1.m-b-20: strong Sounds good to me.
-                    p.m-b-40 Sound good to you?
+                    h1.m-b-20: strong Sounds good
+                    p.m-b-40 I bet Zach could really write something cool like a tagline
                     p
                         a(href="#team" class="btn btn-lg btn-circle btn-brand smoothscroll") Who we are
                         a(href="#" class="btn btn-lg btn-circle btn-outline-new-white smoothscroll") What we need
@@ -26,12 +26,23 @@ append content
 
     // About
 
-    section.module.smoothscroll#about
+    section.module.bg-light
         .container
+
+            .row#about
+                .col-md-6.m-auto.text-center
+
+                    h1.text-brand Hello!
+                    p.lead.text-black-50 Thanks for stopping by. Check out our video below for a quick message.
+
             .row
-                .col-md-12.m-auto
+                .col-md-12
+                    .space(data-MY="60px")
+
+            .row
+                .col-md-9.m-auto
                     .modal-video-container
-                        img(src="assets/images/main/services-1.jpg" alt="")
+                        img(src="assets/images/static.gif" alt="")
                         a(href="https://www.youtube.com/watch?v=0aCbYxJ9gus" class="play-button")
 
     // About end
@@ -39,11 +50,12 @@ append content
     = "\n"
 
     // Who
-    section.module#team
+    section.module.divider-top
         .container
 
-            .row
+            .row#team
                 .col-md-6.m-auto.text-center
+
                     h1 Who we are
                     p.lead We're a team of writers, actors, and musicians working together to laugh at each other
 
@@ -52,35 +64,38 @@ append content
                     .space(data-MY="60px")
 
             .row
-                .col-lg-4.col-md-6.m-auto
+                .col-lg-4.col-md-6
                     +team("assets/images/team/jonathan.jpg", "Jonathan Skinner", "Producer / 'Jake'", "http://instagram.com/jon.on.fire",
-                        "Jonathan is an incredibly talented dude with some mad skills and whatnot, check out his dopest freshest shit here."
-                    )
-                .col-lg-4.col-md-6.m-auto
-                    +team("assets/images/team/chelsea.jpg", "Chelsea Cullen Skinner", "Director / 'Charleigh'", "http://chelseacullen.me")
-                .col-lg-4.col-md-6.m-auto
-                    +team("assets/images/team/jesse.jpg", "Jesse Pulchalski", "Composer / 'Boomer'", "http://instagram.com/j_bone_stallone")
-                .col-lg-4.col-md-6.m-auto
-                    +team("assets/images/team/christa.jpg", "Christa Giammattei", "Sound Engineer / 'Gia'", "http://cgiammatteisound.com")
-                .col-lg-4.col-md-6.m-auto
-                    +team("assets/images/team/zach.jpg", "Zach Beck", "Head Writer / 'Ski'", "http://instagram.com/back_zecker")
-
-            .row
-                .col-md-12
-                    .space(data-MY="30px")
-
-            .row
-                .col-md-12
-                    p.text-center: a(href="#" class="btn btn-circle btn-outline-brand") About Us
+                        "Jonathan is a theatre/film actor and singer/songwriter with training from UCB (NYC) and film credits including work with Lenovo and Audi.")
+                .col-lg-4.col-md-6
+                    +team("assets/images/team/chelsea.jpg", "Chelsea Cullen Skinner", "Director / 'Charleigh'", "http://chelseacullen.me",
+                    "Chelsea is an actor with a BA in Theatre Education from Meredith College, with film credits including work with HBO and the Travel Channel.")
+                .col-lg-4.col-md-6
+                    +team("assets/images/team/jesse.jpg", "Jesse Pulchalski", "Composer / 'Boomer'", "http://instagram.com/j_bone_stallone",
+                    "Jesse is a guitarist, songwriter, and performer who has been featured in Guitar Player Magazine as a rising guitarist to watch out for.")
+                .col-lg-4.col-md-6.offset-2
+                    +team("assets/images/team/christa.jpg", "Christa Giammattei", "Sound Engineer / 'Gia'", "http://cgiammatteisound.com",
+                    "Christa is an audio engineer with past clients including VW Volkswagen, PBS, and National Geographic.")
+                .col-lg-4.col-md-6
+                    +team("assets/images/team/zach.jpg", "Zach Beck", "Head Writer / 'Ski'", "http://instagram.com/back_zecker",
+                    "Zach is a writer with a degree in Literature and Creative Writing from UNC Asheville.")
+            //
+            //.row
+            //    .col-md-12
+            //        .space(data-MY="30px")
+            //
+            //.row
+            //    .col-md-12
+            //        p.text-center: a(href="#" class="btn btn-circle btn-outline-brand") About Us
     // Who end
 
     = "\n"
 
     // Form
-    section.module.divider-top#contact
+    section.module.divider-top
         .container
 
-            .row
+            .row#contact
                 .col-lg-6.col-md-9.m-auto.text-center
                     h1 Let's talk.
                     p.lead See how your users experience your website in realtime or view trends to see any changes in performance over time.

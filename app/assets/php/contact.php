@@ -1,11 +1,11 @@
 <?php
 
     // Mail settings
-    $to      = "web-master72@yandex.ru";
+    $to      = "jon.a.skinner1@gmail.com";
 
 
     // You can put here your email
-    $header = "From: noreply@boomerang.com\r\n";
+    $header = "From: noreply@soundsgood.show\r\n";
     $header.= "MIME-Version: 1.0\r\n";
     $header.= "Content-Type: text/plain; charset=utf-8\r\n";
     $header.= "X-Priority: 1\r\n";

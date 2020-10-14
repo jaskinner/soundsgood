@@ -12,8 +12,9 @@ $colors: map-merge((
     "wild-sand":     #f4f4f4,
     "rolling-stone": #788487,
     "mine-shaft":    #333333,
-    "brown":     #49392C,
-    "walnut":    #97806C,
+    "brown":         #49392C,
+    "walnut":        #97806C,
+    "secondary":     #3F99EA,
 ), $colors);
 
 $theme-colors: map-merge((

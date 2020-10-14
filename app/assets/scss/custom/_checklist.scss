@@ -11,6 +11,7 @@
     font-weight: 900;
     font-size: 2rem;
     position: relative;
+    cursor: pointer;
 
     &:hover {
       font-style: italic;
@@ -22,7 +23,7 @@
       position: absolute;
       left: -35px;
       top: -5px;
-      color: theme-color("brand");
+      color: color("secondary");
     }
 
     &:before {
@@ -34,6 +35,23 @@
       height: 30px;
       width: 30px;
       border: 4px solid white;
+    }
+
+    .need-wrapper {
+      font-style: normal;
+      font-size: 1rem;
+      font-family: Roboto, sans-serif;
+      overflow: hidden;
+      height: 0;
+      transition: height 0.5s ease;
+
+      &.open {
+        height: 220px;
+
+        @include media-breakpoint-up(md) {
+          height: 100px;
+        }
+      }
     }
   }
 }

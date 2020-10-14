@@ -15,11 +15,11 @@ append content
 
             .row#home
                 .col-md-12
-                    h1.m-b-20: strong Sounds good
+                    h1.m-b-20: strong Sounds Good
                     p.m-b-40 I bet Zach could really write something cool like a tagline
                     p
                         a(href="#team" class="btn btn-lg btn-circle btn-brand smoothscroll") Who we are
-                        a(href="#" class="btn btn-lg btn-circle btn-outline-new-white smoothscroll") What we need
+                        a(href="#needs" class="btn btn-lg btn-circle btn-outline-new-white smoothscroll") What we need
     // Hero end
 
     = "\n"
@@ -32,7 +32,7 @@ append content
             .row#about
                 .col-md-6.m-auto.text-center
 
-                    h1 Hello!
+                    h1 HELLO!
                     p.lead Thanks for stopping by. Check out our video below for a quick message.
 
             .row
@@ -50,13 +50,13 @@ append content
     = "\n"
 
     // Needs
-    section.module
-        .container
+    section
+        .container-fluid
 
             .row#needs
                 .col-md-6.m-auto.text-center
 
-                    h1 What we need
+                    h1 WHAT WE NEED
                     p.lead People helping people
 
             .row
@@ -64,12 +64,21 @@ append content
                     .space(data-MY="60px")
 
             .row
-                .col-md-6.mx-auto
+                .col-11.col-xl-8.offset-1.mx-xl-auto
                     ul.checklist-items
-                        +checklist("Filming location")
-                        +checklist("Musical equipment")
-                        +checklist("Very old van")
-                        +checklist("Donations")
+                        +checklist("Filming locations",
+                        "Storefront space/Bar",
+                        "Vacant store front space. Break room/kitchen. Back room/storage area. Bar or area with bar big enough to film as a bar.")
+                        +checklist("Musical equipment",
+                        "New/Used Equipment for staging",
+                        "We won't be using any of the contributed instruments, so non-working instruments are great! These are for showing on displays/floor areas in the store and will be handled minimally.")
+                        +checklist("Very old van",
+                        "Uglier the better!",
+                        "We may not need to be able to drive it, but we will need to film inside it. Looking for something we can fill with fake garbage and junk.")
+                        +checklist("Donations",
+                        "Always appreciated",
+                        "Donations will be accepted on case-by-case terms. Reach out to us to discuss how you can help in a big way by investing financially in the project.")
+
     // Needs end
 
     = "\n"
@@ -81,7 +90,7 @@ append content
             .row#team
                 .col-md-6.m-auto.text-center
 
-                    h1 Who we are
+                    h1 WHO WE ARE
                     p.lead We're a team of writers, actors, and musicians working together to laugh at each other
 
             .row
@@ -98,7 +107,7 @@ append content
                 .col-lg-4.col-md-6
                     +team("assets/images/team/jesse.jpg", "Jesse Pulchalski", "Composer / 'Boomer'", "http://instagram.com/j_bone_stallone",
                         "Jesse is a guitarist, songwriter, and performer who has been featured in Guitar Player Magazine as a rising guitarist to watch out for.")
-                .col-lg-4.col-md-6.offset-md-2
+                .col-lg-4.col-md-6.offset-lg-2
                     +team("assets/images/team/christa.jpg", "Christa Giammattei", "Sound Engineer / 'Gia'", "http://cgiammatteisound.com",
                         "Christa is an audio engineer with past clients including VW Volkswagen, PBS, and National Geographic.")
                 .col-lg-4.col-md-6

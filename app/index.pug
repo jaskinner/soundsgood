@@ -43,7 +43,7 @@ append content
                 .col-md-9.m-auto
                     .modal-video-container
                         img(src="assets/images/static.gif" alt="")
-                        a(href="https://www.youtube.com/watch?v=0aCbYxJ9gus" class="play-button")
+                        a(href="https://www.youtube.com/watch?v=PyGoIfe4aeI" class="play-button")
 
     // About end
 
@@ -56,8 +56,8 @@ append content
             .row#needs
                 .col-md-6.m-auto.text-center
 
-                    h1 WHAT WE NEED
-                    p.lead People helping people
+                    h1 What we need
+                    p.lead Click on each item for specifics on how you can help
 
             .row
                 .col-md-12
@@ -68,7 +68,7 @@ append content
                     ul.checklist-items
                         +checklist("Filming locations",
                             "Storefront space/Bar",
-                            "Vacant store front space. Break room/kitchen. Back room/storage area. Bar or area with bar big enough to film as a bar.")
+                            "Vacant store front space preferably with break room/kitchen area and back room/storage area. Bar or area with bar big enough to film as a bar.")
                         +checklist("Musical equipment",
                             "New/Used Equipment for staging",
                             "We won't be using any of the contributed instruments, so non-working instruments are great! These are for showing on displays/floor areas in the store and will be handled minimally.")
@@ -90,8 +90,8 @@ append content
             .row#team
                 .col-md-6.m-auto.text-center
 
-                    h1 WHO WE ARE
-                    p.lead We're a team of writers, actors, and musicians working together to laugh at each other
+                    h1 Meet the team
+                    p.lead Brought to you by just the right amount of talent overlap, industry experience, and ridiculous stories from our time in retail service
 
             .row
                 .col-md-12
@@ -123,8 +123,8 @@ append content
 
             .row#contact
                 .col-lg-6.col-md-9.m-auto.text-center
-                    h1 Let's talk.
-                    p.lead See how your users experience your website in realtime or view trends to see any changes in performance over time.
+                    h1 Want to get involved?
+                    p.lead #[i Sounds Good] would sound so much better with your help!
 
             .row
                 .col-md-12
@@ -159,9 +159,17 @@ append content
     = "\n"
 
     // Image
-    section.module.no-gutters.p-0
+    section.module.no-gutters.p-0.parallax.text-center(data-background="assets/images/main/lake.jpg" data-overlay="0.6")
         .container-fluid
+
             .row
                 .col-md-12
-                    img(src="assets/images/main/lake.jpg" alt="")
+                    .space(data-MY="120px")
+            .row
+                .col-md-6.m-auto.text-center
+                    h1 Thank you!
+                    p.lead We can't wait to bring this production to life with you!
+            .row
+                .col-md-12
+                    .space(data-MY="120px")
     // Image end

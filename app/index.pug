@@ -67,24 +67,24 @@ append content
                 .col-11.col-xl-8.offset-1.mx-xl-auto
                     ul.checklist-items
                         +checklist("Filming locations",
-                        "Storefront space/Bar",
-                        "Vacant store front space. Break room/kitchen. Back room/storage area. Bar or area with bar big enough to film as a bar.")
+                            "Storefront space/Bar",
+                            "Vacant store front space. Break room/kitchen. Back room/storage area. Bar or area with bar big enough to film as a bar.")
                         +checklist("Musical equipment",
-                        "New/Used Equipment for staging",
-                        "We won't be using any of the contributed instruments, so non-working instruments are great! These are for showing on displays/floor areas in the store and will be handled minimally.")
+                            "New/Used Equipment for staging",
+                            "We won't be using any of the contributed instruments, so non-working instruments are great! These are for showing on displays/floor areas in the store and will be handled minimally.")
                         +checklist("Very old van",
-                        "Uglier the better!",
-                        "We may not need to be able to drive it, but we will need to film inside it. Looking for something we can fill with fake garbage and junk.")
+                            "Uglier the better!",
+                            "We may not need to be able to drive it, but we will need to film inside it. Looking for something we can fill with fake garbage and junk.")
                         +checklist("Donations",
-                        "Always appreciated",
-                        "Donations will be accepted on case-by-case terms. Reach out to us to discuss how you can help in a big way by investing financially in the project.")
+                            "Always appreciated",
+                            "Donations will be accepted on case-by-case terms. Reach out to us to discuss how you can help in a big way by investing financially in the project.")
 
     // Needs end
 
     = "\n"
 
     // Who
-    section.module
+    section.module.divider-bottom
         .container
 
             .row#team
@@ -159,9 +159,8 @@ append content
     = "\n"
 
     // Image
-    section.module
+    section.module.no-gutters.p-0
         .container-fluid
-
             .row
                 .col-md-12
                     img(src="assets/images/main/lake.jpg" alt="")

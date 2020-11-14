@@ -2,8 +2,8 @@
 // Variables
 //
 @font-face {
-  font-family: "Permanent Marker";
-  src: url(../fonts/PermanentMarker-Regular.ttf);
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
 }
 
 $colors: map-merge((
@@ -12,18 +12,21 @@ $colors: map-merge((
     "wild-sand":     #f4f4f4,
     "rolling-stone": #788487,
     "mine-shaft":    #333333,
+    "brown":         #49392C,
+    "walnut":        #97806C,
+    "secondary":     #3F99EA,
 ), $colors);
 
 $theme-colors: map-merge((
-    "black":     #222222,
-    "brand":     #505cfd,
+    "black":     #1A1F24,
+    "brand":     #EA903F,
     "new-gray":  #d8d8d8,
-    "new-white": #ffffff,
+    "new-white": #EFECEC,
 ), $theme-colors);
 
-
-$body-color:                        color("rolling-stone");
-$border-color:                      color("athens-gray");
+$body-bg:                           color("mine-shaft");
+$body-color:                        color("walnut");
+$border-color:                      color("brown");
 $border-radius:                     rem(3px);
 $text-muted:                        #a3a6a8;
 
@@ -44,8 +47,8 @@ $link-hover-decoration:             none;
 
 $font-size-base:                    rem(14px);
 $line-height-base:                  1.8;
-$headings-font-family:              "Permanent Marker", cursive;
-$font-family-serif:                 "Playfair Display", sans-serif;
+$headings-font-family:              "opake", sans-serif;
+$font-family-serif:                 "Roboto", sans-serif;
 $font-family-base:                  $font-family-serif;
 
 $h1-font-size:                      rem(42px);
@@ -64,7 +67,7 @@ $h6-font-weight:                    500;
 
 $headings-line-height:              1.3;
 $headings-margin-bottom:            rem(10px);
-$headings-color:                    theme-color("black");
+$headings-color:                    theme-color("brand");
 $blockquote-font-size:              rem(18px);
 $lead-font-size:                    rem(15px);
 $lead-font-weight:                  400;

@@ -139,22 +139,33 @@ mixin PieChart(title, counter)
             p Map where your photos were taken and discover local points of interest. Map where your photos.
 
 //------------------------------------------------------------------
+//- Checklist
+//------------------------------------------------------------------
+
+mixin checklist(item, title, details)
+    li.checklist-item= item
+        .need-wrapper
+            h5= title
+            p= details
+
+
+//------------------------------------------------------------------
 //- Team
 //------------------------------------------------------------------
 
-mixin team(image, name, role, social, bio)
+mixin team(image, name, role, link, bio)
     .team-item
         .team-image
             img(src=image alt="")
             .team-wrap
                 .team-content-bio
                     p.lead= bio
-                .team-content
+                .team-content.text-center
                     h6.team-name= name
                     .team-role= role
                 .team-content-social
                     ul
-                        li: a(href=social) #[i.fab.fa-instagram]
+                        li: a(href=link) #[i.fas.fa-link]
 
 //------------------------------------------------------------------
 //- Portfolio

@@ -13,39 +13,82 @@ append content
     section.module-cover.parallax.text-center.fullscreen(data-background="assets/images/module-2.jpg" data-jarallax-video="mp4:assets/video/hero.mp4" data-overlay="0.6")
         .container
 
-            .row
+            .row#home
                 .col-md-12
-                    h1.m-b-20: strong Sounds good to me.
-                    p.m-b-40 Sound good to you?
+                    h1.m-b-20: strong Sounds Good
+                    p.m-b-40 "It's not a dream, it's destiny"
                     p
-                        a(href="#" class="btn btn-lg btn-circle btn-brand") Who we are
-                        a(href="#" class="btn btn-lg btn-circle btn-outline-new-white") What we need
+                        a(href="#team" class="btn btn-lg btn-circle btn-brand smoothscroll") Who we are
+                        a(href="#needs" class="btn btn-lg btn-circle btn-outline-new-white smoothscroll") What we need
     // Hero end
 
     = "\n"
 
     // About
 
-    section.module.smoothscroll#about
+    section.module
         .container
+
+            .row#about
+                .col-md-6.m-auto.text-center
+
+                    h1 HELLO!
+                    p.lead Thanks for stopping by. Check out our video below for a quick message.
+
             .row
-                .col-md-12.m-auto
+                .col-md-12
+                    .space(data-MY="60px")
+
+            .row
+                .col-md-9.m-auto
                     .modal-video-container
-                        img(src="assets/images/main/services-1.jpg" alt="")
-                        a(href="https://www.youtube.com/watch?v=0aCbYxJ9gus" class="play-button")
+                        img(src="assets/images/static.gif" alt="")
+                        a(href="https://www.youtube.com/watch?v=PyGoIfe4aeI" class="play-button")
 
     // About end
 
     = "\n"
 
-    // Who
-    section.module#team
-        .container
+    // Needs
+    section
+        .container-fluid
+
+            .row#needs
+                .col-md-6.m-auto.text-center
+
+                    h1 What we need
+                    p.lead Click on each item for specifics on how you can help
 
             .row
+                .col-md-12
+                    .space(data-MY="60px")
+
+            .row
+                .col-11.col-xl-8.offset-1.mx-xl-auto
+                    ul.checklist-items
+                        +checklist("Filming locations",
+                            "Storefront space/Bar",
+                            "Vacant store front space preferably with break room/kitchen area and back room/storage area. Bar or area with bar big enough to film as a bar.")
+                        +checklist("Musical equipment",
+                            "New/Used Equipment for staging",
+                            "We won't be using any of the contributed instruments, so non-working instruments are great! These are for showing on displays/floor areas in the store and will be handled minimally.")
+                        +checklist("Donations",
+                            "Always appreciated",
+                            "Donations will be accepted on case-by-case terms. Reach out to us to discuss how you can help in a big way by investing financially in the project.")
+
+    // Needs end
+
+    = "\n"
+
+    // Who
+    section.module.divider-bottom
+        .container
+
+            .row#team
                 .col-md-6.m-auto.text-center
-                    h1 Who we are
-                    p.lead
+
+                    h1 Meet the team
+                    p.lead Brought to you by just the right amount of talent overlap, industry experience, and ridiculous stories from our time in retail service
 
             .row
                 .col-md-12
@@ -54,267 +97,68 @@ append content
             .row
                 .col-lg-4.col-md-6
                     +team("assets/images/team/jonathan.jpg", "Jonathan Skinner", "Producer / 'Jake'", "http://instagram.com/jon.on.fire",
-                        "Jonathan is an incredibly talented dude with some mad skills and whatnot, check out his dopest freshest shit here."
-                    )
+                        "Jonathan is a theatre/film actor and singer/songwriter with training from UCB (NYC) and film credits including work with Lenovo and Audi.")
                 .col-lg-4.col-md-6
-                    +team("assets/images/team/chelsea.jpg", "Chelsea Cullen Skinner", "Director / 'Charleigh'", "http://chelseacullen.me")
+                    +team("assets/images/team/chelsea.jpg", "Chelsea Cullen Skinner", "Director / 'Charleigh'", "http://chelseacullen.me",
+                        "Chelsea is an actor with a BA in Theatre Education from Meredith College, with film credits including work with HBO and the Travel Channel.")
                 .col-lg-4.col-md-6
-                    +team("assets/images/team/jesse.jpg", "Jesse Pulchalski", "Composer / 'Boomer'", "http://instagram.com/j_bone_stallone")
+                    +team("assets/images/team/jesse.jpg", "Jesse Pulchalski", "Composer / 'Boomer'", "http://instagram.com/j_bone_stallone",
+                        "Jesse is a guitarist, songwriter, and performer who has been featured in Guitar Player Magazine as a rising guitarist to watch out for.")
+                .col-lg-4.col-md-6.offset-lg-2
+                    +team("assets/images/team/christa.jpg", "Christa Giammattei", "Sound Engineer / 'Gia'", "http://cgiammatteisound.com",
+                        "Christa is an audio engineer with past clients including VW Volkswagen, PBS, and National Geographic.")
                 .col-lg-4.col-md-6
-                    +team("assets/images/team/christa.jpg", "Christa Giammattei", "Sound Engineer / 'Gia'", "http://cgiammatteisound.com")
-                .col-lg-4.col-md-6
-                    +team("assets/images/team/zach.jpg", "Zach Beck", "Head Writer / 'Ski'", "http://instagram.com/back_zecker")
-
-            .row
-                .col-md-12
-                    .space(data-MY="30px")
-
-            .row
-                .col-md-12
-                    p.text-center: a(href="#" class="btn btn-circle btn-outline-brand") About Us
+                    +team("assets/images/team/zach.jpg", "Zach Beck", "Head Writer / 'Ski'", "http://instagram.com/back_zecker",
+                        "Zach is a writer with a degree in Literature and Creative Writing from UNC Asheville.")
     // Who end
 
     = "\n"
 
-    // What
+    // Form
     section.module
         .container
 
-            .row
-                .col-md-6.m-auto.text-center
-                    h1 What we need
-                    p.lead Spare music equipment is always appreciated!
+            .row#contact
+                .col-lg-6.col-md-9.m-auto.text-center
+                    h1 Want to get involved?
+                    p.lead #[i Sounds Good] could be so much better with your help!
 
             .row
                 .col-md-12
                     .space(data-MY="60px")
 
             .row
-                +pricing("Starter", "Free", false, "ti-slice")
-                +pricing("Standard", "45", true, "ti-pin-alt")
-                +pricing("Professional", "69", true, "ti-marker-alt")
-
-            .row
-                .col-md-12
-                    .space(data-MY="30px")
-
-            //.row
-            //    .col-md-12
-            //        p.text-center: a(href="#" class="btn btn-circle btn-outline-brand") About Us
-    // What end
+                .col-md-8.m-auto
+                    form#contact-form(method="post" novalidate)
+                        .row
+                            .col-md-6
+                                .form-group
+                                    input.form-control(type="text" name="name" placeholder="Name" required="")
+                                    p.help-block.text-danger
+                            .col-md-6
+                                .form-group
+                                    input.form-control(type="email" name="email" placeholder="E-mail" required="")
+                                    p.help-block.text-danger
+                            .col-md-12
+                                .form-group
+                                    input.form-control(type="text" name="subject" placeholder="Subject" required="")
+                                    p.help-block.text-danger
+                            .col-md-12
+                                .form-group
+                                    textarea.form-control(name="message" placeholder="Message" rows="12" required="")
+                            .col-md-12
+                                p
+                                    input(type="submit" class="btn btn-block btn-brand" value="Send Message")
+                    // Ajax response
+                    #contact-response.ajax-response.text-center
+    // Form end
 
     = "\n"
 
-    // About
-    //section.module.divider-bottom
-    //    .container
-    //
-    //        .row
-    //            .col-md-6.m-auto.text-center
-    //                h1 Your Site, Your Way.
-    //                p.lead See how your users experience your website in realtime or view trends to see any changes in performance over time.
-    //
-    //        .row
-    //            .col-md-12
-    //                .space(data-MY="60px")
-    //
-    //        .row
-    //            .col-md-12
-    //                p: img(src="assets/images/main/mega-mockup.png" alt="")
-    //
-    //        .row
-    //            .col-md-12
-    //                .space(data-mY="30px")
-    //
-    //        .row
-    //            .col-lg-3.col-md-6
-    //                +IconBox("ti-layout", "Visual Composer", "Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum amet.", "text-center", true)
-    //            .col-lg-3.col-md-6
-    //                +IconBox("ti-cup", "Revolution Slider", "Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum amet.", "text-center", true)
-    //            .col-lg-3.col-md-6
-    //                +IconBox("ti-harddrives", "User Experience", "Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum amet.", "text-center", true)
-    //            .col-lg-3.col-md-6
-    //                +IconBox("ti-desktop", "Fully Responsive", "Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum amet.", "text-center", true)
-    //// About end
-    //
-    //= "\n"
-    //
-    //// Portfolio
-    //section.module.p-b-0
-    //    .container
-    //
-    //        .row
-    //            .col-md-6.m-auto.text-center
-    //                h1 Digital Design.
-    //                p.lead See how your users experience your website in realtime or view trends to see any changes in performance over time.
-    //
-    //        .row
-    //            .col-md-12
-    //                .space(data-MY="40px")
-    //
-    //        .row
-    //            .col-md-12
-    //                ul.filters.serif
-    //                    li: a(href="#" data-filter="*" class="current") All
-    //                    li: a(href="#" data-filter=".branding") Branding
-    //                    li: a(href="#" data-filter=".digital") Digital
-    //                    li: a(href="#" data-filter=".packaging") Packaging
-    //
-    //    .container-fluid
-    //        .row.row-portfolio(data-columns="3")
-    //            .grid-sizer
-    //            +PortfolioItem("assets/images/portfolio/1.jpg", "Solave Cleanser", "branding", "Digital")
-    //            +PortfolioItem("assets/images/portfolio/4.jpg", "Monochrome", "digital", "Branding")
-    //            +PortfolioItem("assets/images/portfolio/3.jpg", "Ellie Cashman", "packaging", "Packaging")
-    //            +PortfolioItem("assets/images/portfolio/6.jpg", "White Sleeve", "branding", "Digital")
-    //            +PortfolioItem("assets/images/portfolio/5.jpg", "Classic Socks", "digital", "Branding")
-    //            +PortfolioItem("assets/images/portfolio/2.jpg", "Expirience", "packaging", "Packaging")
-    //// Portfolio end
-    //
-    //= "\n"
-    //
-    //// Services
-    //section.module
-    //    .container
-    //
-    //        .row
-    //            .col-lg-4.col-md-6
-    //                +IconBox("ti-layout", "Visual Composer", "See how your users experience your website in realtime or view trends to see any changes in performance over time.", "")
-    //            .col-lg-4.col-md-6
-    //                +IconBox("ti-image", "Revolution Slider", "See how your users experience your website in realtime or view trends to see any changes in performance over time.", "")
-    //            .col-lg-4.col-md-6
-    //                +IconBox("ti-archive", "User Experience", "See how your users experience your website in realtime or view trends to see any changes in performance over time.", "")
-    //            .col-lg-4.col-md-6
-    //                +IconBox("ti-headphone-alt", "Great Support", "See how your users experience your website in realtime or view trends to see any changes in performance over time.", "")
-    //            .col-lg-4.col-md-6
-    //                +IconBox("ti-desktop", "Fully Responsive", "See how your users experience your website in realtime or view trends to see any changes in performance over time.", "")
-    //            .col-lg-4.col-md-6
-    //                +IconBox("ti-slice", "Trendy Design", "See how your users experience your website in realtime or view trends to see any changes in performance over time.", "")
-    //// Services end
-    //= "\n"
-    //
-    //// Alt Services
-    //section.module.bg-gray
-    //    .container
-    //
-    //        .row.align-items-center
-    //
-    //            .col-lg-6
-    //                img(src="assets/images/main/ipad.png" alt="")
-    //
-    //            .col-lg-5.offset-lg-1
-    //                h2 Flexible & Lightweight.
-    //                p.lead Map where your photos were taken and discover local points of interest. Map where your photos. Map where your photos were taken and discover.
-    //                .space(data-MY="50px")
-    //                +iconBoxLeft("ti-layout", "Visual Composer", "Map where your photos were taken and discover local points of interest. Map where your photos. Map where your photos were taken and discover.")
-    //                +iconBoxLeft("ti-cup", "Revolution Slider", "Map where your photos were taken and discover local points of interest. Map where your photos. Map where your photos were taken and discover.")
-    //                +iconBoxLeft("ti-harddrives", "User Experience", "Map where your photos were taken and discover local points of interest. Map where your photos. Map where your photos were taken and discover.")
-    //// Alt Services end
-    //
-    //= "\n"
-    //
-    //// Testimonials
-    //section.module.parallax(data-background="assets/images/module-12.jpg" data-overlay="0.5")
-    //    .container
-    //
-    //        .row
-    //            .col-md-12
-    //                .space.m-b-50
-    //
-    //        .row
-    //            .col-md-12
-    //                .review-slides.owl-carousel
-    //                    +TestimonialsSlider("Albert Einstein", "I don't work from drawings. I don't make sketches and drawings <br/> and color sketches into a final painting.")
-    //                    +TestimonialsSlider("Ralph Waldo Emerson", "To be yourself in a world that is constantly trying to make you <br/> something else is the greatest accomplishment.")
-    //                    +TestimonialsSlider("Marilyn Monroe", "Imperfection is beauty, madness is genius and it's better to be <br/> absolutely ridiculous than absolutely boring.")
-    //
-    //        .row
-    //            .col-md-12
-    //                .space.m-b-50
-    //// Testimonials end
-    //
-    //= "\n"
-    //
-    //// Clients
-    //section.module.bg-gray.p-t-0.p-b-40
-    //    .container
-    //
-    //        .space(data-MY="-60px")
-    //
-    //        .row
-    //            +pricing("Starter", "Free", false, "ti-slice")
-    //            +pricing("Standard", "45", true, "ti-pin-alt")
-    //            +pricing("Professional", "69", true, "ti-marker-alt")
-    //
-    //        .row
-    //            .col-md-10.m-auto
-    //                .owl-carousel.clients-carousel
-    //                    .client
-    //                        img(src="assets/images/clients/1.png" alt="")
-    //                    .client
-    //                        img(src="assets/images/clients/2.png" alt="")
-    //                    .client
-    //                        img(src="assets/images/clients/3.png" alt="")
-    //                    .client
-    //                        img(src="assets/images/clients/4.png" alt="")
-    //                    .client
-    //                        img(src="assets/images/clients/5.png" alt="")
-    //                    .client
-    //                        img(src="assets/images/clients/6.png" alt="")
-    //                    .client
-    //                        img(src="assets/images/clients/7.png" alt="")
-    //// Clients end
-    //
-    //= "\n"
-    //
-    //// Posts
-    //section.module
-    //    .container
-    //
-    //        .row
-    //            .col-md-6.m-auto.text-center
-    //                h1 Latest articles.
-    //                p.lead See how your users experience your website in realtime or view trends to see any changes in performance over time.
-    //
-    //        .row
-    //            .col-md-12
-    //                .space(data-MY="60px")
-    //
-    //        .row.row-post-masonry
-    //            .col-md-4.post-item
-    //                +PostMasonry("assets/images/blog/1.jpg", "Bluetooth Speaker")
-    //            .col-md-4.post-item
-    //                +PostMasonry("assets/images/blog/3.jpg", "Minimalist Chandelier")
-    //            .col-md-4.post-item
-    //                +PostMasonry("assets/images/blog/5.jpg", "Standard Shape")
-    //// Posts end
-    //
-    //= "\n"
-    //
-    //// Counters
-    //section.module.bg-gray.p-b-0
-    //    .container
-    //
-    //        .row
-    //            .col-md-3
-    //                +Counter("Happy Clients", "1538", "icon-energy icons")
-    //            .col-md-3
-    //                +Counter("Total downloads", "2124", "icon-game-controller icons")
-    //            .col-md-3
-    //                +Counter("Awards Won", "3128", "icon-fire icons")
-    //            .col-md-3
-    //                +Counter("Theme Users", "9534", "icon-diamond icons")
-    //// Counters end
-    //
-    //= "\n"
-    //
-    //// Image
-    //section.module.no-gutters.p-0
-    //    .container-fluid
-    //
-    //        .row
-    //            .col-md-12
-    //                img(src="assets/images/module-18.jpg" alt="")
-    //// Image end
-
-
+    // Image
+    section.module.no-gutters.p-0
+        .container-fluid
+            .row
+                .col-md-12
+                    img(src="assets/images/main/lake.jpg" alt="")
+    // Image end

@@ -2,7 +2,14 @@ include ../mixins/mixins
 doctype html
 html(lang="en")
     head
-        script(src="assets/js/custom/gtag.js")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-YE93VGYMK2');
+
         meta(name="google-site-verification" content="piQrK8lE7MkbEelud1QBjSYfDi9QvM-W1QUkA5h3HZA")
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")

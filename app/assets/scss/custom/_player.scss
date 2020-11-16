@@ -9,6 +9,17 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, .2);
     margin-bottom: $paragraph-margin-bottom;
 
+    &:after {
+        content: '';
+        background-color: rgba(0,0,0,0.5);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+    }
+
     img {
         width: 100%;
     }

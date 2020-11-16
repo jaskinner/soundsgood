@@ -57,24 +57,23 @@ append content
                 .col-md-6.m-auto.text-center
 
                     h1 What we need
-                    p.lead Click on each item for specifics on how you can help
+                    p.lead Our goal is to raise $7,000 for the project. Here's the breakdown of where all the funds will go:
 
             .row
                 .col-md-12
                     .space(data-MY="60px")
 
             .row
-                .col-11.col-xl-8.offset-1.mx-xl-auto
-                    ul.checklist-items
-                        +checklist("Filming locations",
-                            "Storefront space/Bar",
-                            "Vacant store front space preferably with break room/kitchen area and back room/storage area. Bar or area with bar big enough to film as a bar.")
-                        +checklist("Musical equipment",
-                            "New/Used Equipment for staging",
-                            "We won't be using any of the contributed instruments, so non-working instruments are great! These are for showing on displays/floor areas in the store and will be handled minimally.")
-                        +checklist("Donations",
-                            "Always appreciated",
-                            "Donations will be accepted on case-by-case terms. Reach out to us to discuss how you can help in a big way by investing financially in the project.")
+                .col-lg-2.offset-lg-3.col-md-4
+                    +PieChart("Travel/Location", 50, "To bring as much authenticity as possible to the production we’re secured an actual store front where the bulk of the show will be shot.")
+                .col-lg-2.col-md-4
+                    +PieChart("Equipment and Wardrobe", 25, "Another twenty-five percent of the budget (Equipment and Wardrobe) ensures that the audio and visual quality of Sounds Good is unmatched by other web series.")
+                .col-lg-2.col-md-4
+                    +PieChart("Marketing", 11, "We're hoping that everyone shares and talks about the show a lot, but we want to make sure we don't miss anyone!")
+                .col-lg-2.col-md-6.offset-lg-4
+                    +PieChart("Contingency", 9, "Of course, not all costs can be calculated. Surprises always come up in production, so we’ve built our contingency budget into our $7,000 goal")
+                .col-lg-2.col-md-6
+                    +PieChart("COVID Safety", 5, "for cast and crew safety we’re investing in proper sanitation and PPE for both on and off location to help prevent the spread of Coronavirus.")
 
     // Needs end
 

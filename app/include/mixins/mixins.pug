@@ -128,7 +128,7 @@ mixin Progress(title, counter, color)
 //- Pie Chart
 //------------------------------------------------------------------
 
-mixin PieChart(title, counter)
+mixin PieChart(title, counter, description)
     .pie-chart
         .chart(data-percent=counter)
             span.chart-text
@@ -136,7 +136,7 @@ mixin PieChart(title, counter)
         .chart-title
             h6=title
         .chart-content
-            p Map where your photos were taken and discover local points of interest. Map where your photos.
+            p=description
 
 //------------------------------------------------------------------
 //- Checklist

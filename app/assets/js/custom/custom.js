@@ -723,7 +723,7 @@
                 "\n" +
                 "                gtag('config', 'G-YE93VGYMK2');"
             var head = document.head || document.getElementsByTagName('head')[0];
-            head.appendChild(self.$clipStyles);
+            head.appendChild(ga);
         })
 
     });

@@ -99,7 +99,7 @@ gulp.task('js-jquery', function() {
 gulp.task('js-plugins', function() {
     gulp.src([
         Paths.JS + 'appear.js',
-        Paths.JS + 'gmap3.js',
+        // Paths.JS + 'gmap3.js',
         Paths.JS + 'imagesloaded.pkgd.js',
         Paths.JS + 'isotope.pkgd.js',
         Paths.JS + 'jqBootstrapValidation.js',

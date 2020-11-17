@@ -715,15 +715,16 @@
 
         $(function () {
             var ga = document.createElement('script');
-            ga.setAttribute('type', '');
+            var code = document.createElement('script');
+            ga.setAttribute('async', '');
             ga.src = "https://www.googletagmanager.com/gtag/js?id=G-YE93VGYMK2";
-            ga.text = "window.dataLayer = window.dataLayer || [];\n" +
-                "                function gtag(){dataLayer.push(arguments);}\n" +
-                "                gtag('js', new Date());\n" +
-                "\n" +
-                "                gtag('config', 'G-YE93VGYMK2');"
+            code.text = "window.dataLayer = window.dataLayer || [];\n" +
+                "function gtag(){dataLayer.push(arguments);}\n" +
+                "gtag('js', new Date());\n" +
+                "gtag('config', 'G-YE93VGYMK2');"
             var head = document.head || document.getElementsByTagName('head')[0];
             head.appendChild(ga);
+            head.appendChild(code);
         })
 
     });

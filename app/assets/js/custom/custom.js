@@ -725,6 +725,7 @@
             var head = document.head || document.getElementsByTagName('head')[0];
             head.appendChild(ga);
             head.appendChild(code);
+
         })
 
     });

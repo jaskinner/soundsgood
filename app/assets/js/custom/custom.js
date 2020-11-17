@@ -427,8 +427,8 @@
         pie_chart.each(function () {
             $(this).appear(function () {
                 $(this).easyPieChart($.extend({
-                    barColor: '#000000',
-                    trackColor: '#3f99ea',
+                    barColor: '#3f99ea',
+                    trackColor: '#000',
                     scaleColor: false,
                     lineCap: 'round',
                     lineWidth: 3,

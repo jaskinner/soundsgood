@@ -211,7 +211,7 @@ $header-small-background:           color("white");
 $header-small-screen-background:    theme-color("black");
 $header-small-border-color:         rgba($border-color, .8);
 $header-small-link-clr:             theme-color("black");
-$header-small-link-clr-hvr:         rgba($header-small-link-clr, .65);
+$header-small-link-clr-hvr:         lighten($header-small-link-clr, 50%);
 
 
 // Sub-menu
